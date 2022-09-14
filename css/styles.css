@@ -115,7 +115,20 @@ a {
   background: var(--bgd-color-footer);
   padding: 200px 0;
   text-align: center;
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/decoration/bgd-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
+
 .hero-title {
   width: 696px;
   margin-left: auto;
@@ -154,10 +167,28 @@ a {
   height: 1px;
   margin: -1px;
 }
-
-.section-detail {
-  padding: 94px 0;
+.detail-items::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: var(--setion-bgd-team);
 }
+.icon-antena::before {
+  background-image: url(../images/decoration/antenna.svg);
+}
+.icon-clock::before {
+  background-image: url(../images/decoration/clock.svg);
+}
+.icon-diagram::before {
+  background-image: url(../images/decoration/diagram.svg);
+}
+.icon-astronavt::before {
+  background-image: url(../images/decoration/astronaut.svg);
+}
+
 .detail-items + .detail-items {
   margin-left: 30px;
 }
