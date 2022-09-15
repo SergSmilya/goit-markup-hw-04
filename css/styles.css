@@ -17,7 +17,6 @@
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  /* outline: 1px solid red;  */
 }
 .section {
   padding-top: 94px;
@@ -88,6 +87,11 @@ a {
 }
 .header-nav .lex + .lex {
   margin-left: 50px;
+}
+.icon-nav {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
 }
 .auth-link {
   color: var(--primary-color-text);
@@ -167,26 +171,23 @@ a {
   height: 1px;
   margin: -1px;
 }
-.detail-items::before {
-  display: block;
-  content: "";
+.detail-section {
+  display: flex;
+  justify-content: space-between;
+}
+.detail-items {
+  width: 270px;
+}
+.icon-box {
+  width: 270px;
   height: 120px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  padding: 25px 100px;
+  margin-bottom: 30px;
   background-color: var(--setion-bgd-team);
 }
-.icon-antena::before {
-  background-image: url(../images/decoration/antenna.svg);
-}
-.icon-clock::before {
-  background-image: url(../images/decoration/clock.svg);
-}
-.icon-diagram::before {
-  background-image: url(../images/decoration/diagram.svg);
-}
-.icon-astronavt::before {
-  background-image: url(../images/decoration/astronaut.svg);
+.icon-detail {
+  width: 70px;
+  height: 70px;
 }
 
 .detail-items + .detail-items {
@@ -244,7 +245,6 @@ a {
 }
 .team-list {
   justify-content: space-between;
-  padding-bottom: 94px;
 }
 .team-item {
   border-radius: 0px 0px 4px 4px;
@@ -268,11 +268,25 @@ a {
 }
 .team-text {
   margin-top: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   color: var(--primary-color-text);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
+}
+/* .social-box {
+} */
+.social {
+  display: flex;
+  justify-content: space-between;
+  width: 206px;
+  margin: 0px 32px 30px 32px;
+  outline: 1px solid greenyellow;
+  padding: 12px;
+}
+.icon-social {
+  width: 20px;
+  height: 20px;
 }
 /* portfolio */
 .btn-nav {
