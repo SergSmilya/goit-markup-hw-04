@@ -102,12 +102,13 @@ a {
 
 .icon-nav {
   fill: var(--primary-color-text);
-  width: 16px;
-  height: 12px;
+
   margin-right: 10px;
 }
 
 .auth-link {
+  display: flex;
+  align-items: center;
   color: var(--primary-color-text);
   font-weight: 500;
 }
@@ -203,10 +204,12 @@ a {
 }
 
 .icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 270px;
   height: 120px;
   padding: 25px 100px;
-  margin-bottom: 30px;
   background-color: var(--setion-bgd-team);
 }
 
@@ -300,6 +303,7 @@ a {
 
 .team-text {
   margin-top: 0px;
+  margin-bottom: 16px;
   color: var(--primary-color-text);
   font-weight: 400;
   font-size: 16px;
@@ -340,13 +344,10 @@ a {
 }
 
 /* Team-social */
-.social-box {
-  margin: 16px 32px 30px;
-}
-
 .social {
   display: flex;
   justify-content: space-between;
+  margin: 0 32px 30px;
 }
 
 .social-team {
@@ -403,8 +404,8 @@ a {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-items:hover,
-.portfolio-items:focus {
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -453,6 +454,10 @@ a {
   column-gap: 30px;
 }
 
+.portfolio-link {
+  display: block;
+}
+
 .portfolio-nav {
   margin-bottom: 50px;
 }
@@ -476,11 +481,11 @@ span.studio,
 
 .footer-adress {
   display: flex;
+  align-items: baseline;
 }
 
 /* Footer-social */
 .footer-social {
-  margin-top: 12px;
   margin-left: 70px;
   width: 206px;
 }
